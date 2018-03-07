@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="src/js/main.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="locationBox">
+            <div class="header_text">How's the weather in...</div>
+            <div class="inputText">Location:</div>
+                <input type="text" id="name"/>
+                <i class="fas fa-plus add"></i>
+            </div>
+        </div>
+        <div class="innerwrapper">
+            <div id="locations"></div>
+            <div class="weather">
+                <div id="image"></div>
+                <div class="weather_box">
+                    <div class="close">
+                        <div class="crossCircle">
+                            <div class="cross">x</div>
+                        </div>
+                    </div>
+                    <div class="tempBox">
+                        <div id="temp"></div>
+                        <div class="degrees">
+                            <i class="icon" data-icon="*"></i>
+                        </div>
+                    </div>
+                    <div id="city"></div>
+                </div>
+            </div>
+        </div>
+        <div class="company">
+            <img class="logga_picture" src="images/blacklogga.png" alt="logga">
+            <div class="logga_text">Vinnovera</div>
+        </div>
+    </div>
+</body>
+</html>

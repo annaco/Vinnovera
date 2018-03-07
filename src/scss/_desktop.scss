@@ -1,0 +1,193 @@
+html {
+    
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.locationBox {
+    position: absolute;
+    top: 150px;
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(to right, #fcfaed, #f1f6ef);
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+
+    input {
+        position: absolute;
+        margin-left: 4px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        top: 64px;
+        left: 80px;
+        width: 170px;
+
+        input:active {
+            border: 1px solid white;
+        }
+    }
+    
+    .inputText {
+        position: relative;
+        width: 250px;
+        top: 10px;
+        left: 20px;
+        padding-left: 10px;
+        padding-top: 8px;
+        font-weight: bold;
+        background: white;
+        height: 25px;
+        font-size: 12px;
+    }
+    
+    .add {
+        position: absolute;
+        top: 66px; 
+        right: 25px;
+        color: #c7dd34;
+        font-size: bold;
+    }   
+}
+
+.company {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 700px;
+    background: linear-gradient(to right, #f7f4d6, #cce3dd);
+    display: flex;
+    justify-content: center;
+}
+
+.innerwrapper {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height:100%;
+    top: 250px;
+    justify-content: center;    
+    flex: 1;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+   
+    .weather {
+        width: 200px;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: center;
+        top: 30px;
+       
+        .weather_box {
+            flex-direction: column;
+            color: white;
+            align-items: center;
+            width: 100%;
+
+            .close {
+                height: 15px;
+                display: none;
+                justify-content: flex-end;
+                              
+                                             
+                .crossCircle {
+                    background: white;
+                    border-radius: 50%;
+                    width: 12px;
+                    height: 12px;
+                    margin: 2px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                              
+                    .cross {
+                        position: absolute;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            #city {
+                justify-content: center;
+                align-content: center;
+                font-weight: bold;
+                height: 50%;
+                text-align: center;
+            }
+        
+            .tempBox {
+                display: flex;
+                flex-direction: row;
+               
+                #temp {
+                    height: 50%;
+                    text-align: right; 
+                    font-size: 22px;
+                    color: white;
+                    width: 50%;
+                }
+
+                .degrees {
+                    color: white;
+                    width: 50%;
+                    font-style: normal;
+                    display: none;
+
+                    i {
+                        font-style: normal;
+                    }
+                }
+            }
+        }    
+
+        #image {
+            color: white;
+            width: 100%;
+            margin: 10px 0 0 18px;
+
+            i {    
+                font-size: 60px;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+.header_text {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+
+
+.logga_picture {
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+}
+
+.logga_text {
+     font-family: 'Lato', sans-serif;
+     font-size: 20px;
+     padding-left: 3px;
+}
+
+.icon:before {
+	font-family: 'MeteoconsRegular';
+    content: attr(data-icon);
+}
+

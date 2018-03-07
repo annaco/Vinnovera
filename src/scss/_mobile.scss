@@ -1,0 +1,189 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+}
+
+.locationBox {
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #f1f6ef, #eaf3f0);
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 480px;
+    background: linear-gradient(to top, #f7f4d6, #cce3dd);
+    position: relative;
+    height: 100%;
+   
+}
+
+.innerwrapper {
+     
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 250px;
+    justify-content: center;      
+    align-items: stretch;    
+    flex: 1; 
+    height: auto;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+       
+    .weather {
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        margin: -40px 10%;
+        height: 120px;
+    
+        .weather_box {
+            flex-direction: column;
+            width: 50%;
+           
+            .close {
+                display: none;
+                height: 10px;
+                justify-content: flex-end;
+
+                           
+                .crossCircle {
+                    background: white;
+                    border-radius: 50%;
+                    width: 12px;
+                    height: 12px;
+                    margin: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                            
+                    .cross {
+                        position: absolute;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            #city {
+                text-align: center;
+                color: white;
+            }
+        
+            .tempBox {
+                display: flex;
+                flex-direction: row;
+                height: 30px;
+                padding: 5px 5px;
+               
+                #temp {
+                    height: 50%;
+                    text-align: right; 
+                    font-size: 22px;
+                    color: white;
+                    width: 50%;
+                }
+
+                .degrees {
+                    color: white;
+                    width: 50%;
+                    font-style: normal;
+                    display: none;
+
+                    i {
+                        font-style: normal;
+                    }
+                }
+            }
+        } 
+        
+        #image {
+            color: white;
+            padding: 3% 0 0 19%;
+            width: 50%;
+ 
+            i {    
+                font-size: 60px;
+                font-style: normal;
+            }
+        }
+    }
+}    
+
+
+.header_text {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.weatherBox {
+    width: 300px;
+    height: 200px;
+}
+
+input {
+    position: absolute;
+    margin-left: 4px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    top: 60px;
+    left: 85px;
+    width: 66%;
+    height: 20px;
+       
+    input:active {
+        border: 1px solid white;
+    }
+}
+
+.inputText {
+    position: relative;
+    width: 94%;
+    top: 32px;
+    padding-left: 20px;
+    font-weight: bold;
+    background: white;
+    height: 30px;
+}
+
+.add {
+    position: absolute;
+    top: 64px; 
+    right: 4%;
+    color: #c7dd34;
+    font-size: bold;
+}    
+
+
+.company {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 15px;    
+
+    .logga_picture {
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+    }
+
+    .logga_text {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        padding-left: 3px;
+    }
+}
+
+.icon:before {
+	font-family: 'MeteoconsRegular';
+    content: attr(data-icon);
+}
